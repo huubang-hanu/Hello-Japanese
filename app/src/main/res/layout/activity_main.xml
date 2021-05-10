@@ -1,0 +1,1436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="onRadioBtnClick"
+    android:tag="u"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/table_name_hira"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/hira"
+        android:textColor="#E60E0E"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/hira_table"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="40dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/hira_a"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_a"
+                    android:tag="a" />
+
+                <ImageButton
+                    android:id="@+id/hira_i"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_i"
+                    android:tag="i" />
+
+                <ImageButton
+                    android:id="@+id/hira_u"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_u"
+                    android:tag="u" />
+
+                <ImageButton
+                    android:id="@+id/hira_e"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_e"
+                    android:tag="e" />
+
+                <ImageButton
+                    android:id="@+id/hira_o"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_o"
+                    android:tag="o" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/hira_ka"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_ka"
+                    android:tag="ka" />
+
+                <ImageButton
+                    android:id="@+id/hira_ki"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_ki"
+                    android:tag="ki" />
+
+                <ImageButton
+                    android:id="@+id/hira_ku"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_ku"
+                    android:tag="ku" />
+
+                <ImageButton
+                    android:id="@+id/hira_ke"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_ke"
+                    android:tag="ke" />
+
+                <ImageButton
+                    android:id="@+id/hira_ko"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_ko"
+                    android:tag="ko" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/hira_sa"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_sa"
+                    android:tag="sa" />
+
+                <ImageButton
+                    android:id="@+id/hira_shi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_shi"
+                    android:tag="shi" />
+
+                <ImageButton
+                    android:id="@+id/hira_su"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_su"
+                    android:tag="su" />
+
+                <ImageButton
+                    android:id="@+id/hira_se"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_se"
+                    android:tag="se" />
+
+                <ImageButton
+                    android:id="@+id/hira_so"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_so"
+                    android:tag="so" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/hira_ta"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_ta"
+                    android:tag="ta" />
+
+                <ImageButton
+                    android:id="@+id/hira_chi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_chi"
+                    android:tag="chi" />
+
+                <ImageButton
+                    android:id="@+id/hira_tsu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_tsu"
+                    android:tag="tsu" />
+
+                <ImageButton
+                    android:id="@+id/hira_te"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_te"
+                    android:tag="te" />
+
+                <ImageButton
+                    android:id="@+id/hira_to"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_to"
+                    android:tag="to" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/hira_na"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_na"
+                    android:tag="na" />
+
+                <ImageButton
+                    android:id="@+id/hira_ni"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_ni"
+                    android:tag="ni" />
+
+                <ImageButton
+                    android:id="@+id/hira_nu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_nu"
+                    android:tag="nu" />
+
+                <ImageButton
+                    android:id="@+id/hira_ne"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_ne"
+                    android:tag="ne" />
+
+                <ImageButton
+                    android:id="@+id/hira_no"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_no"
+                    android:tag="no" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/hira_ha"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_ha"
+                    android:tag="ha" />
+
+                <ImageButton
+                    android:id="@+id/hira_hi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_hi"
+                    android:tag="hi" />
+
+                <ImageButton
+                    android:id="@+id/hira_fu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_fu"
+                    android:tag="fu" />
+
+                <ImageButton
+                    android:id="@+id/hira_he"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_he"
+                    android:tag="he" />
+
+                <ImageButton
+                    android:id="@+id/hira_ho"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_ho"
+                    android:tag="ho" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/hira_ma"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_ma"
+                    android:tag="ma" />
+
+                <ImageButton
+                    android:id="@+id/hira_mi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_mi"
+                    android:tag="mi" />
+
+                <ImageButton
+                    android:id="@+id/hira_mu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_mu"
+                    android:tag="mu" />
+
+                <ImageButton
+                    android:id="@+id/hira_me"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_me"
+                    android:tag="me" />
+
+                <ImageButton
+                    android:id="@+id/hira_mo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_mo"
+                    android:tag="mo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/hira_ya"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_ya"
+                    android:tag="ya" />
+
+                <ImageButton
+                    android:id="@+id/hira_one"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_one" />
+
+                <ImageButton
+                    android:id="@+id/hira_yu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_yu"
+                    android:tag="yu" />
+
+                <ImageButton
+                    android:id="@+id/hira_two"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_two" />
+
+                <ImageButton
+                    android:id="@+id/hira_yo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_yo"
+                    android:tag="yo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/hira_ra"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_ra"
+                    android:tag="ra" />
+
+                <ImageButton
+                    android:id="@+id/hira_ri"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_ri"
+                    android:tag="ri" />
+
+                <ImageButton
+                    android:id="@+id/hira_ru"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_ru"
+                    android:tag="ru" />
+
+                <ImageButton
+                    android:id="@+id/hira_re"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_re"
+                    android:tag="re" />
+
+                <ImageButton
+                    android:id="@+id/hira_ro"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_ro"
+                    android:tag="ro" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/hira_wa"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_wa"
+                    android:tag="wa" />
+
+                <ImageButton
+                    android:id="@+id/hira_three"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_three" />
+
+                <ImageButton
+                    android:id="@+id/hira_four"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_four" />
+
+                <ImageButton
+                    android:id="@+id/hira_five"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_five" />
+
+                <ImageButton
+                    android:id="@+id/hira_wo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_wo"
+                    android:tag="wo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/hira_n"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_n"
+                    android:tag="n" />
+
+                <ImageButton
+                    android:id="@+id/hira_six"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_six" />
+
+                <ImageButton
+                    android:id="@+id/hira_seven"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_seven" />
+
+                <ImageButton
+                    android:id="@+id/hira_eight"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_eight" />
+
+                <ImageButton
+                    android:id="@+id/hira_nine"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hira_nine" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/table_name_kata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:alpha="0"
+        android:fontFamily="sans-serif"
+        android:text="@string/kata"
+        android:textColor="#E60E0E"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/kata_table"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="40dp"
+        android:alpha="0"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/kata_a"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_a"
+                    android:tag="a" />
+
+                <ImageButton
+                    android:id="@+id/kata_i"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_i"
+                    android:tag="i" />
+
+                <ImageButton
+                    android:id="@+id/kata_u"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_u"
+                    android:tag="u" />
+
+                <ImageButton
+                    android:id="@+id/kata_e"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_e"
+                    android:tag="e" />
+
+                <ImageButton
+                    android:id="@+id/kata_o"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_o"
+                    android:tag="o" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/kata_ka"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_ka"
+                    android:tag="ka" />
+
+                <ImageButton
+                    android:id="@+id/kata_ki"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_ki"
+                    android:tag="ki" />
+
+                <ImageButton
+                    android:id="@+id/kata_ku"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_ku"
+                    android:tag="ku" />
+
+                <ImageButton
+                    android:id="@+id/kata_ke"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_ke"
+                    android:tag="ke" />
+
+                <ImageButton
+                    android:id="@+id/kata_ko"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_ko"
+                    android:tag="ko" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/kata_sa"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_sa"
+                    android:tag="sa" />
+
+                <ImageButton
+                    android:id="@+id/kata_shi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_shi"
+                    android:tag="shi" />
+
+                <ImageButton
+                    android:id="@+id/kata_su"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_su"
+                    android:tag="su" />
+
+                <ImageButton
+                    android:id="@+id/kata_se"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_se"
+                    android:tag="se" />
+
+                <ImageButton
+                    android:id="@+id/kata_so"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_so"
+                    android:tag="so" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/kata_ta"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_ta"
+                    android:tag="ta" />
+
+                <ImageButton
+                    android:id="@+id/kata_chi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_chi"
+                    android:tag="chi" />
+
+                <ImageButton
+                    android:id="@+id/kata_tsu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_tsu"
+                    android:tag="tsu" />
+
+                <ImageButton
+                    android:id="@+id/kata_te"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_te"
+                    android:tag="te" />
+
+                <ImageButton
+                    android:id="@+id/kata_to"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_to"
+                    android:tag="to" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/kata_na"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_na"
+                    android:tag="na" />
+
+                <ImageButton
+                    android:id="@+id/kata_ni"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_ni"
+                    android:tag="ni" />
+
+                <ImageButton
+                    android:id="@+id/kata_nu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_nu"
+                    android:tag="nu" />
+
+                <ImageButton
+                    android:id="@+id/kata_ne"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_ne"
+                    android:tag="ne" />
+
+                <ImageButton
+                    android:id="@+id/kata_no"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_no"
+                    android:tag="no" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/kata_ha"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_ha"
+                    android:tag="ha" />
+
+                <ImageButton
+                    android:id="@+id/kata_hi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_hi"
+                    android:tag="hi" />
+
+                <ImageButton
+                    android:id="@+id/kata_fu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_fu"
+                    android:tag="fu" />
+
+                <ImageButton
+                    android:id="@+id/kata_he"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_he"
+                    android:tag="he" />
+
+                <ImageButton
+                    android:id="@+id/kata_ho"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_ho"
+                    android:tag="ho" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/kata_ma"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_ma"
+                    android:tag="ma" />
+
+                <ImageButton
+                    android:id="@+id/kata_mi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_mi"
+                    android:tag="mi" />
+
+                <ImageButton
+                    android:id="@+id/kata_mu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_mu"
+                    android:tag="mu" />
+
+                <ImageButton
+                    android:id="@+id/kata_me"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_me"
+                    android:tag="me" />
+
+                <ImageButton
+                    android:id="@+id/kata_mo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_mo"
+                    android:tag="mo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/kata_ya"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_ya"
+                    android:tag="ya" />
+
+                <ImageButton
+                    android:id="@+id/kata_one"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_one" />
+
+                <ImageButton
+                    android:id="@+id/kata_yu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_yu"
+                    android:tag="yu" />
+
+                <ImageButton
+                    android:id="@+id/kata_two"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_two" />
+
+                <ImageButton
+                    android:id="@+id/kata_yo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_yo"
+                    android:tag="yo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/kata_ra"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_ra"
+                    android:tag="ra" />
+
+                <ImageButton
+                    android:id="@+id/kata_ri"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_ri"
+                    android:tag="ri" />
+
+                <ImageButton
+                    android:id="@+id/kata_ru"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_ru"
+                    android:tag="ru" />
+
+                <ImageButton
+                    android:id="@+id/kata_re"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_re"
+                    android:tag="re" />
+
+                <ImageButton
+                    android:id="@+id/kata_ro"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_ro"
+                    android:tag="ro" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/kata_wa"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_wa"
+                    android:tag="wa" />
+
+                <ImageButton
+                    android:id="@+id/kata_three"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_three" />
+
+                <ImageButton
+                    android:id="@+id/kata_four"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_four" />
+
+                <ImageButton
+                    android:id="@+id/kata_five"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_five" />
+
+                <ImageButton
+                    android:id="@+id/kata_wo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_wo"
+                    android:tag="wo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/kata_n"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickButton"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_n"
+                    android:tag="n" />
+
+                <ImageButton
+                    android:id="@+id/kata_six"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_six" />
+
+                <ImageButton
+                    android:id="@+id/kata_seven"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_seven" />
+
+                <ImageButton
+                    android:id="@+id/kata_eight"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_eight" />
+
+                <ImageButton
+                    android:id="@+id/kata_nine"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kata_nine" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <RadioButton
+            android:id="@+id/radio_btn_hira"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:background="@drawable/radio_btn_selector"
+            android:button="@android:color/transparent"
+            android:checked="true"
+            android:onClick="onRadioBtnClick"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="@string/hira"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/radio_btn_kata"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:background="@drawable/radio_btn_selector"
+            android:button="@android:color/transparent"
+            android:checked="false"
+            android:onClick="onRadioBtnClick"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="@string/kata"
+            android:textColor="@color/black" />.
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
